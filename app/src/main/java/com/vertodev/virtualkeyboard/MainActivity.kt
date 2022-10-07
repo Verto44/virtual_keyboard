@@ -18,11 +18,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.displayTextField.showSoftInputOnFocus = false
+
         alphaNumericKeyboard()
         numericKeyboard()
 
         binding.textClear.setOnClickListener {
-            binding.dialogTextField.setText("")
+            binding.displayTextField.setText("")
         }
 
         binding.radioAlphanumeric.isChecked = true
@@ -92,7 +94,7 @@ class MainActivity : AppCompatActivity() {
             setSimbolsButton()
 
             buttonDel.setOnClickListener {
-                backspaceFunction(dialogTextField)
+                backspaceFunction(displayTextField)
             }
             buttonCaps.setOnClickListener {
                 capsFunction()
@@ -104,68 +106,68 @@ class MainActivity : AppCompatActivity() {
     private fun numericKeyboard() {
         with(binding) {
             numericButton0.setOnClickListener {
-                updateText(getString(R.string.n0), dialogTextField)
+                updateText(getString(R.string.n0), displayTextField)
             }
             numericButton1.setOnClickListener {
-                updateText(getString(R.string.n1), dialogTextField)
+                updateText(getString(R.string.n1), displayTextField)
             }
             numericButton2.setOnClickListener {
-                updateText(getString(R.string.n2), dialogTextField)
+                updateText(getString(R.string.n2), displayTextField)
             }
             numericButton3.setOnClickListener {
-                updateText(getString(R.string.n3), dialogTextField)
+                updateText(getString(R.string.n3), displayTextField)
             }
             numericButton4.setOnClickListener {
-                updateText(getString(R.string.n4), dialogTextField)
+                updateText(getString(R.string.n4), displayTextField)
             }
             numericButton5.setOnClickListener {
-                updateText(getString(R.string.n5), dialogTextField)
+                updateText(getString(R.string.n5), displayTextField)
             }
             numericButton6.setOnClickListener {
-                updateText(getString(R.string.n6), dialogTextField)
+                updateText(getString(R.string.n6), displayTextField)
             }
             numericButton7.setOnClickListener {
-                updateText(getString(R.string.n7), dialogTextField)
+                updateText(getString(R.string.n7), displayTextField)
             }
             numericButton8.setOnClickListener {
-                updateText(getString(R.string.n8), dialogTextField)
+                updateText(getString(R.string.n8), displayTextField)
             }
             numericButton9.setOnClickListener {
-                updateText(getString(R.string.n9), dialogTextField)
+                updateText(getString(R.string.n9), displayTextField)
             }
             numericButtonP.setOnClickListener {
-                updateText(getString(R.string.s_ponto), dialogTextField)
+                updateText(getString(R.string.s_ponto), displayTextField)
             }
             numericButtonDel.setOnClickListener {
-                backspaceFunction(dialogTextField)
+                backspaceFunction(displayTextField)
             }
         }
     }
 
     private fun ActivityMainBinding.setSimbolsButton() {
         buttonArroba.setOnClickListener {
-            updateText(buttonArroba.text.toString(), dialogTextField)
+            updateText(buttonArroba.text.toString(), displayTextField)
         }
         buttonPonto.setOnClickListener {
-            updateText(buttonPonto.text.toString(), dialogTextField)
+            updateText(buttonPonto.text.toString(), displayTextField)
         }
         buttonPercent.setOnClickListener {
-            updateText(buttonPercent.text.toString(), dialogTextField)
+            updateText(buttonPercent.text.toString(), displayTextField)
         }
         buttonDoisPontos.setOnClickListener {
-            updateText(buttonDoisPontos.text.toString(), dialogTextField)
+            updateText(buttonDoisPontos.text.toString(), displayTextField)
         }
         buttonTraco.setOnClickListener {
-            updateText(buttonTraco.text.toString(), dialogTextField)
+            updateText(buttonTraco.text.toString(), displayTextField)
         }
         buttonUnderline.setOnClickListener {
-            updateText(buttonUnderline.text.toString(), dialogTextField)
+            updateText(buttonUnderline.text.toString(), displayTextField)
         }
         buttonEsclamacao.setOnClickListener {
-            updateText(buttonEsclamacao.text.toString(), dialogTextField)
+            updateText(buttonEsclamacao.text.toString(), displayTextField)
         }
         buttonInterrogacao.setOnClickListener {
-            updateText(buttonInterrogacao.text.toString(), dialogTextField)
+            updateText(buttonInterrogacao.text.toString(), displayTextField)
         }
     }
 
@@ -202,115 +204,115 @@ class MainActivity : AppCompatActivity() {
 
     private fun ActivityMainBinding.setAlphaButton() {
         buttonA.setOnClickListener {
-            updateText(buttonA.text.toString(), dialogTextField)
+            updateText(buttonA.text.toString(), displayTextField)
         }
         buttonB.setOnClickListener {
-            updateText(buttonB.text.toString(), dialogTextField)
+            updateText(buttonB.text.toString(), displayTextField)
         }
         buttonC.setOnClickListener {
-            updateText(buttonC.text.toString(), dialogTextField)
+            updateText(buttonC.text.toString(), displayTextField)
         }
         buttonD.setOnClickListener {
-            updateText(buttonD.text.toString(), dialogTextField)
+            updateText(buttonD.text.toString(), displayTextField)
         }
         buttonE.setOnClickListener {
-            updateText(buttonE.text.toString(), dialogTextField)
+            updateText(buttonE.text.toString(), displayTextField)
         }
         buttonF.setOnClickListener {
-            updateText(buttonF.text.toString(), dialogTextField)
+            updateText(buttonF.text.toString(), displayTextField)
         }
         buttonG.setOnClickListener {
-            updateText(buttonG.text.toString(), dialogTextField)
+            updateText(buttonG.text.toString(), displayTextField)
         }
         buttonH.setOnClickListener {
-            updateText(buttonH.text.toString(), dialogTextField)
+            updateText(buttonH.text.toString(), displayTextField)
         }
         buttonI.setOnClickListener {
-            updateText(buttonI.text.toString(), dialogTextField)
+            updateText(buttonI.text.toString(), displayTextField)
         }
         buttonJ.setOnClickListener {
-            updateText(buttonJ.text.toString(), dialogTextField)
+            updateText(buttonJ.text.toString(), displayTextField)
         }
         buttonK.setOnClickListener {
-            updateText(buttonK.text.toString(), dialogTextField)
+            updateText(buttonK.text.toString(), displayTextField)
         }
         buttonL.setOnClickListener {
-            updateText(buttonL.text.toString(), dialogTextField)
+            updateText(buttonL.text.toString(), displayTextField)
         }
         buttonM.setOnClickListener {
-            updateText(buttonM.text.toString(), dialogTextField)
+            updateText(buttonM.text.toString(), displayTextField)
         }
         buttonN.setOnClickListener {
-            updateText(buttonN.text.toString(), dialogTextField)
+            updateText(buttonN.text.toString(), displayTextField)
         }
         buttonO.setOnClickListener {
-            updateText(buttonO.text.toString(), dialogTextField)
+            updateText(buttonO.text.toString(), displayTextField)
         }
         buttonP.setOnClickListener {
-            updateText(buttonP.text.toString(), dialogTextField)
+            updateText(buttonP.text.toString(), displayTextField)
         }
         buttonQ.setOnClickListener {
-            updateText(buttonQ.text.toString(), dialogTextField)
+            updateText(buttonQ.text.toString(), displayTextField)
         }
         buttonR.setOnClickListener {
-            updateText(buttonR.text.toString(), dialogTextField)
+            updateText(buttonR.text.toString(), displayTextField)
         }
         buttonS.setOnClickListener {
-            updateText(buttonS.text.toString(), dialogTextField)
+            updateText(buttonS.text.toString(), displayTextField)
         }
         buttonT.setOnClickListener {
-            updateText(buttonT.text.toString(), dialogTextField)
+            updateText(buttonT.text.toString(), displayTextField)
         }
         buttonU.setOnClickListener {
-            updateText(buttonU.text.toString(), dialogTextField)
+            updateText(buttonU.text.toString(), displayTextField)
         }
         buttonV.setOnClickListener {
-            updateText(buttonV.text.toString(), dialogTextField)
+            updateText(buttonV.text.toString(), displayTextField)
         }
         buttonX.setOnClickListener {
-            updateText(buttonX.text.toString(), dialogTextField)
+            updateText(buttonX.text.toString(), displayTextField)
         }
         buttonW.setOnClickListener {
-            updateText(buttonW.text.toString(), dialogTextField)
+            updateText(buttonW.text.toString(), displayTextField)
         }
         buttonY.setOnClickListener {
-            updateText(buttonY.text.toString(), dialogTextField)
+            updateText(buttonY.text.toString(), displayTextField)
         }
         buttonZ.setOnClickListener {
-            updateText(buttonZ.text.toString(), dialogTextField)
+            updateText(buttonZ.text.toString(), displayTextField)
         }
     }
 
     private fun ActivityMainBinding.setNumericButton() {
         button0.setOnClickListener {
-            updateText(getString(R.string.n0), dialogTextField)
+            updateText(getString(R.string.n0), displayTextField)
         }
         button1.setOnClickListener {
-            updateText(getString(R.string.n1), dialogTextField)
+            updateText(getString(R.string.n1), displayTextField)
         }
         button2.setOnClickListener {
-            updateText(getString(R.string.n2), dialogTextField)
+            updateText(getString(R.string.n2), displayTextField)
         }
         button3.setOnClickListener {
-            updateText(getString(R.string.n3), dialogTextField)
+            updateText(getString(R.string.n3), displayTextField)
         }
         button4.setOnClickListener {
-            updateText(getString(R.string.n4), dialogTextField)
+            updateText(getString(R.string.n4), displayTextField)
         }
         button5.setOnClickListener {
-            updateText(getString(R.string.n5), dialogTextField)
+            updateText(getString(R.string.n5), displayTextField)
         }
         button6.setOnClickListener {
-            updateText(getString(R.string.n6), dialogTextField)
+            updateText(getString(R.string.n6), displayTextField)
         }
         button7.setOnClickListener {
-            updateText(getString(R.string.n7), dialogTextField)
+            updateText(getString(R.string.n7), displayTextField)
         }
         button8.setOnClickListener {
-            updateText(getString(R.string.n8), dialogTextField)
+            updateText(getString(R.string.n8), displayTextField)
         }
         button9.setOnClickListener {
-            updateText(getString(R.string.n9), dialogTextField)
+            updateText(getString(R.string.n9), displayTextField)
         }
     }
 
