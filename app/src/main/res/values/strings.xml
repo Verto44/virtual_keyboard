@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Teclado Virtual</string>
+
+    <!-- Keyboad -->
+    <string name="a">a</string>
+    <string name="b">b</string>
+    <string name="c">c</string>
+    <string name="d">d</string>
+    <string name="e">e</string>
+    <string name="f">f</string>
+    <string name="g">g</string>
+    <string name="h">h</string>
+    <string name="i">i</string>
+    <string name="j">j</string>
+    <string name="k">k</string>
+    <string name="l">l</string>
+    <string name="m">m</string>
+    <string name="n">n</string>
+    <string name="o">o</string>
+    <string name="p">p</string>
+    <string name="q">q</string>
+    <string name="r">r</string>
+    <string name="s">s</string>
+    <string name="t">t</string>
+    <string name="u">u</string>
+    <string name="v">v</string>
+    <string name="x">x</string>
+    <string name="w">w</string>
+    <string name="y">y</string>
+    <string name="z">z</string>
+
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="D">D</string>
+    <string name="E">E</string>
+    <string name="F">F</string>
+    <string name="G">G</string>
+    <string name="H">H</string>
+    <string name="I">I</string>
+    <string name="J">J</string>
+    <string name="K">K</string>
+    <string name="L">L</string>
+    <string name="M">M</string>
+    <string name="N">N</string>
+    <string name="O">O</string>
+    <string name="P">P</string>
+    <string name="Q">Q</string>
+    <string name="R">R</string>
+    <string name="S">S</string>
+    <string name="T">T</string>
+    <string name="U">U</string>
+    <string name="V">V</string>
+    <string name="X">X</string>
+    <string name="W">W</string>
+    <string name="Y">Y</string>
+    <string name="Z">Z</string>
+
+    <string name="n0">0</string>
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+    <string name="n6">6</string>
+    <string name="n7">7</string>
+    <string name="n8">8</string>
+    <string name="n9">9</string>
+
+    <string name="s_ponto">.</string>
+    <string name="s_arroba">\@</string>
+    <string name="s_traco">-</string>
+    <string name="s_underline">_</string>
+    <string name="s_percent">%</string>
+    <string name="s_esclamacao">!</string>
+    <string name="s_interrogacao">\?</string>
+    <string name="s_dois_potos">:</string>
+
+    <string name="backspace">del</string>
+    <string name="keyboard_done">OK</string>
+    <string name="caps">Caps</string>
+    <string name="limpar">Limpar</string>
+    <string name="teclado_virtual">Teclado Virtual</string>
+    <string name="ok">OK</string>
+    <string name="selecione_teclado">Selecione o tipo de teclado</string>
+    <string name="numerico">Numérico</string>
+    <string name="alfanumerico">Alfanumérico</string>
+</resources>
