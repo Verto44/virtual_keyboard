@@ -4,7 +4,7 @@
 <h1 align="center">
 <a>Teclado Virtual</a>
 </h1>
-<p align="center">🚀 Aplicativo que fornece a implementação de dois tipos de teclado virtual. O objetivo principal de aplicativo é servir como base de código para ser usado no desenvolvimento de outros aplicativos se houver a necessidade de incluir está funcionalidade. 
+<p align="center">🚀 Aplicativo que fornece a implementação de dois tipos de teclado virtual. O objetivo principal desse projeto é servir como base de código para ser usado no desenvolvimento de outros aplicativos se houver a necessidade de incluir está funcionalidade. 
 </p>
 
 <h1 align="center">
